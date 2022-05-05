@@ -17,8 +17,8 @@ function my_touchstart(e){
 mouse_event="touchstart"
 color=document.getElementById("color").value
 width=document.getElementById("width").value
-lastPositionOfX=e.touches[0].clientX-offsetLeft
-lastPositionOfY=e.touches[0].clientY-offsetTop
+lastPositionOfX=e.touches[0].clientX-canvas.offsetLeft
+lastPositionOfY=e.touches[0].clientY-canvas.offsetTop
 }
 
 canvas.addEventListener("touchmove",my_touchmove)
