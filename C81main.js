@@ -23,7 +23,7 @@ lastPositionOfY=e.touches[0].clientY-canvas.offsetTop
 
 canvas.addEventListener("touchmove",my_touchmove)
 function my_touchmove(e){
-    current_position_of_mouse_x= e.touches[0].clilentX- canvas.offsetLeft;
+    current_position_of_mouse_x= e.touches[0].clientX- canvas.offsetLeft;
     current_position_of_mouse_y= e.touches[0].clientY - canvas.offsetTop;
     
         ctx.beginPath()
